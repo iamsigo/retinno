@@ -11,7 +11,6 @@ $posts_page_id   = (int) get_option( 'page_for_posts' );
 $blog_url        = $posts_page_id ? get_permalink( $posts_page_id ) : home_url( '/blog/' );
 $about_url       = retinno_get_page_url( 'about', '/about/' );
 ?>
-<div class="scroll-progress" aria-hidden="true"><span class="scroll-progress__bar"></span></div>
 <main id="main-content" class="retinno-home">
     <section class="hero-section hero-section--signature" aria-labelledby="home-hero-title">
         <div class="container hero-grid">
@@ -77,30 +76,6 @@ $about_url       = retinno_get_page_url( 'about', '/about/' );
         <div class="hero-section__gridline" aria-hidden="true"></div>
     </section>
 
-    <section class="ticker-section" aria-hidden="true">
-        <?php
-        $ticker_items = array(
-            array( 'شناخت وضعیت تحصیلی', 'INSIGHT' ),
-            array( 'برنامه‌ریزی هفتگی', 'PLANNING' ),
-            array( 'تحلیل آزمون‌ها', 'ANALYTICS' ),
-            array( 'مشاوره پیوسته', 'MENTORSHIP' ),
-            array( 'بهبود روش مطالعه', 'METHOD' ),
-            array( 'مدیریت زمان', 'TIME' ),
-            array( 'انتخاب هدف واقع‌بینانه', 'FOCUS' ),
-            array( 'بازبینی مسیر', 'REVIEW' ),
-        );
-        ?>
-        <div class="ticker">
-            <div class="ticker__track">
-                <?php for ( $pass = 0; $pass < 2; $pass++ ) : ?>
-                    <?php foreach ( $ticker_items as $item ) : ?>
-                        <span class="ticker__item"><em></em><?php echo esc_html( $item[0] ); ?><small><?php echo esc_html( $item[1] ); ?></small></span>
-                    <?php endforeach; ?>
-                <?php endfor; ?>
-            </div>
-        </div>
-    </section>
-
     <section class="section intro-section" id="approach" aria-labelledby="approach-title">
         <div class="container intro-grid">
             <div class="section-heading" data-reveal>
@@ -125,17 +100,6 @@ $about_url       = retinno_get_page_url( 'about', '/about/' );
                 <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M7 37V11M7 37h34"/><path d="m12 31 9-9 7 5 11-15"/><circle cx="39" cy="12" r="3"/></svg></div>
                 <h3>پیگیری و بهبود</h3><p>با مرور عملکرد و اصلاح برنامه، مسیرت را به‌مرور با نیازها و نتیجه‌ها هماهنگ‌تر کن.</p><span class="feature-card__corner" aria-hidden="true">↙</span>
             </article>
-        </div>
-
-        <div class="container">
-            <div class="stats-band" data-reveal>
-                <div class="stats-grid">
-                    <div class="stat"><span class="stat__value"><i data-count-to="120">۰</i>+</span><span class="stat__label">دانشجوی همراه</span></div>
-                    <div class="stat"><span class="stat__value"><i data-count-to="45">۰</i>+</span><span class="stat__label">آزمون تحلیل‌شده</span></div>
-                    <div class="stat"><span class="stat__value"><i data-count-to="96">۰</i>٪</span><span class="stat__label">رضایت از برنامه</span></div>
-                    <div class="stat"><span class="stat__value"><i data-count-to="7">۰</i></span><span class="stat__label">سال تجربه مشاوره</span></div>
-                </div>
-            </div>
         </div>
     </section>
 

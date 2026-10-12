@@ -7,7 +7,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         <div class="site-footer__brand">
             <a class="footer-wordmark" href="<?php echo esc_url( home_url( '/' ) ); ?>">RETINNO<span>رتینو</span></a>
             <p>همراهی برای ساختن مسیری آگاهانه‌تر در دوران کنکور؛ با برنامه‌ریزی، پیگیری و یادگیری مستمر.</p>
-            <?php retinno_render_social_links(); ?>
         </div>
         <div class="site-footer__links">
             <h2>دسترسی سریع</h2>
@@ -32,9 +31,6 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
         <span>طراحی‌شده برای مسیر یادگیری بهتر</span>
     </div>
 </footer>
-<button class="back-to-top" type="button" aria-label="بازگشت به بالای صفحه">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 15 7-7 7 7"/></svg>
-</button>
 <?php wp_footer(); ?>
 </body>
 </html>
