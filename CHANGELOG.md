@@ -1,11 +1,3 @@
-## 1.4.0 — Premium visual layer
-- Self-hosted the Vazirmatn typeface (five weights, woff2, with preload for regular/bold); typography now renders consistently without any external CDN.
-- Added a brand-gradient button treatment, scroll progress bar, sticky-header elevation on scroll, sliding navigation underline, back-to-top control, and hero float accents.
-- Added an animated topic ticker between the hero and method sections and a counters band with Persian-digit count-up animations to the homepage.
-- Added cursor-tracking spotlight highlights on feature and consultant cards; all new motion honors prefers-reduced-motion and degrades gracefully without JavaScript.
-- Added optional footer social links (Instagram, Telegram, WhatsApp, LinkedIn, YouTube) managed via Settings → Reading; icons render only when URLs are configured.
-- Preserved RETINNO Core content types, ACF field names, taxonomies, menus, and WordPress template architecture.
-
 ## 1.3.0 — Signature homepage experience
 - Reworked the homepage hero as a branded dark technical canvas with an original inline SVG path illustration and layered interface details.
 - Added a three-step brand principles rail and refined the method feature cards.
